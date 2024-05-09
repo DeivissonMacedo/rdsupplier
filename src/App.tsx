@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header/Header';
+import './Styles/global.css';
+import { UnfilledButton } from './components/Buttons/unfilledButton/unfilledButton';
+import { GenericCard } from './components/CardPainel/GenericCard/GenericCard';
+import { DisableButton } from './components/Buttons/disableButton/disableButton';
+import { GenericFilterPanel } from './components/FilterPanel/GenericFilterPanel/GenericFilterPanel';
+import { SearchResults } from './components/SearchResults/SearchResults';
+import { Footer } from './components/Footer/Footer';
+
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <SearchResults/>
+    <GenericFilterPanel/>
+    <GenericFilterPanel/>
+    <GenericFilterPanel/>
+    <Footer/>
+    
+   
+  
+  </>
   );
 }
 

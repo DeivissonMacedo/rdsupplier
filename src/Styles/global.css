@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+
+
+}
+
+body, button, input, option, textarea{
+
+    font-family: 'rdmodern-medium', sans-serif;
+}
+body{
+    background-color: #F4F4F4;
+}
+
+@font-face {
+    font-family: 'rdmodern-medium';
+    src: url('../assets/fonts/e9338e24-rdmodern-medium.ttf');
+}

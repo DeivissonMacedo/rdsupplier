@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    height: 325px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    padding: 15px;
+    
+    
+    
+    .button{
+       
+        height: 55px;
+        width: 55px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .textContainer{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: auto;
+    }
+
+    .ProductName{
+       
+        font-size: 14px;
+        color: #2C2F38;
+        margin-bottom: 2px;
+
+    }
+
+    .BrandName{
+        text-align:left ;
+        font-size:14px;
+        color: #8A8C97;
+        margin-bottom: 5px;
+    }
+
+}

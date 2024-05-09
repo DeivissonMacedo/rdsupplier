@@ -1,0 +1,37 @@
+.container {
+  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    
+
+    img {
+        
+        width: 100%;
+        height: auto;
+        padding-top: 7px;
+        padding-left: 5px;
+
+    }
+
+    .ProductName {
+        font-weight: bolder;
+        font-size: 32px;
+        color: #2C2F38;
+        line-height: 100%;
+       padding-left: 25px;
+        margin-bottom: 0px;
+        text-align: start;
+
+    }
+
+    .ResultsNumber {
+        font-size: 16px;
+        color: #4CA15D;
+        margin-top: 0px;
+        padding-left: 25px;
+        text-align:start;
+
+    }
+}

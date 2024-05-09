@@ -1,0 +1,21 @@
+
+
+.greenButton{
+    height: 28px;
+    width: 80px;
+    font-size: small;
+    border-radius: 12px;
+    border-color: transparent;
+    color: white;
+    background-color: #007A28;
+
+    &:active{
+        background-color: #004E16;
+
+    }
+
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.header{
+    background-color: white;
+    color: #007A28;
+
+}
+
+.container{
+    
+    
+    max-width: 1240px;
+    padding:  1rem;
+    margin: 0 auto;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+     img{
+       max-width: 200px;
+       width: 100%;
+       height: auto;
+     }
+
+
+}
