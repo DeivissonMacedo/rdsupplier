@@ -12,8 +12,21 @@ body, button, input, option, textarea{
     font-family: 'rdmodern-medium', sans-serif;
 }
 body{
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
     background-color: #F4F4F4;
+    padding: 1rem;
+   
+   
+    
 }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width:100% ;
+}
+
 
 @font-face {
     font-family: 'rdmodern-medium';

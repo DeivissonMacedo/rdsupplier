@@ -9,7 +9,7 @@
         height: 40px;
         border-radius: 12px;
 
-        &:focus{
+        &:focus {
             border-color: #007A28;
 
         }
@@ -21,10 +21,20 @@
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
-        color: #0F8143;
+        color: #8A8C97;
         cursor: pointer;
+        border-style: none;
+        background-color: transparent;
 
         
+
+
+    }
+    .searchIcon:hover {
+        color: #007A28
+        
+        
+
     }
 
 }

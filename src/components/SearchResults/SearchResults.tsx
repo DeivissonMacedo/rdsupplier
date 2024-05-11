@@ -1,15 +1,20 @@
+import { useEffect } from "react";
 import searchCompletedImg from "../images/corporateImages/search_completed.png";
 import styles from './styles.module.scss';
-export const SearchResults: React.FC = () => {
+
+interface SearchResultsProps {
+    productSearchName: string;
+    resultsNumber: string;
+}
+
+export const SearchResults: React.FC<SearchResultsProps> = ({ productSearchName, resultsNumber }) => {
+    
+
     return (
         <div className={styles.container}>      
-              <img src={searchCompletedImg} alt="search Completed with results:" />  
-                <span className={styles.ProductName}>Product Find</span>
-                <span className={styles.ResultsNumber}>6.372 results</span>
+            <img src={searchCompletedImg} alt="search Completed with results:" />  
+            <span className={styles.ProductName} >{productSearchName}</span>
+            <span className={styles.ResultsNumber}>{resultsNumber} results</span>
         </div>
-
     );
-
-
-
 }

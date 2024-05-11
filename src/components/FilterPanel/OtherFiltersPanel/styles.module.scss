@@ -1,0 +1,26 @@
+
+
+.PanelContainer{
+    height: 100px;
+    width: 225px;
+    display: flex;
+    justify-content:space-between;
+    
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    
+
+       .toggle{
+        margin-right: 30px;
+        
+
+       }
+
+
+
+}

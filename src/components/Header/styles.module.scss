@@ -23,4 +23,33 @@
      }
 
 
+}.searchContainer {
+  position: relative;
+  display: inline-block;
+
+  input[type="text"] {
+      padding-left: 25px;
+      padding-right: 30px;
+      width: 400px;
+      height: 40px;
+      border-radius: 12px;
+
+      &:focus{
+          border-color: #007A28;
+
+      }
+
+  }
+
+  .searchIcon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #0F8143;
+      cursor: pointer;
+
+      
+  }
+
 }

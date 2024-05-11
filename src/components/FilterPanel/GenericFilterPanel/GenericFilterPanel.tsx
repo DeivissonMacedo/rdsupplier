@@ -3,14 +3,21 @@
 import styles from './styles.module.scss';
 import { toggleButton } from '../../Buttons/ToggleButton/toggleButton';
 import { GenericToggleButton } from '../../Buttons/ToggleButton/GenericToggleButton';
-export const GenericFilterPanel: React.FC=()=>{
+
+interface FilterPanelProps {
+    panelToggleFunction: string;
+    
+}
+
+
+export const GenericFilterPanel: React.FC<FilterPanelProps>=({panelToggleFunction})=>{
     return(
         <>
             <div className={styles.PanelContainer}>
-                <span>Mostrar Apenas Genericos</span>
+                <span>{panelToggleFunction}</span>
              
                 <div className={styles.toggle}>
-                <GenericToggleButton />
+                <GenericToggleButton/>
 
                 </div>
             </div>

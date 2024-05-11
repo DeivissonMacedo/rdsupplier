@@ -1,24 +1,33 @@
 import { FaSquare } from "react-icons/fa";
-import styles  from './styles.module.scss';
+import styles from './styles.module.scss';
 import productExampleImg from '../../images/productExampleImage/prodImg1.png'
 import { GreenButton } from "../../Buttons/greenButton/greenButton";
+import { ThemeProvider } from "@raiadrogasil/pulso-react-components";
 
-export const GenericCard:React.FC = ()=>{
-    return(
+
+
+
+interface productSttsProps {
+    productName: string;
+    productImage:string;
+   
+}
+
+export const GenericCard: React.FC<productSttsProps> = ({productName,productImage}) => {
+    return (
         <>
-            <div className={styles.container}>
-                <img src = {productExampleImg}/>
-                <div className={styles.textContainer}> <span className={styles.ProductName}>Anthelius Aircilium
-                 Anti-OleosidadeFPS 30 Sem Cor 60g</span>
-               <span className={styles.BrandName}>La Roche-Posay</span>
-               </div>
-              
-               
-
-
-            <GreenButton />
-            </div>
-
+            <ThemeProvider theme= 'raiadrogasil'>
+                <div className={styles.container}>
+                    <img src={productImage} />
+                    <div className={styles.textContainer}>
+                         <span className={styles.ProductName}>{productName}</span>
+                        <span className={styles.BrandName}></span>
+                        
+                    </div>
+                    <GreenButton
+                    />
+                </div>
+            </ThemeProvider>
         </>
 
     );
